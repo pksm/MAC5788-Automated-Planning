@@ -24,5 +24,9 @@ class TestSuccessor(unittest.TestCase):
  		successor = self.plan.successor(self.state, self.action)
  		self.assertTrue(self.action.pos_effect.issubset(set(successor)))
 
+ 	def test_negEffect_not_in_successor(self):
+ 		successor = self.plan.successor(self.state, self.action)
+ 		self.assertTrue(self.action.neg_effect.isdisjoint(set(successor)))
+
 if __name__ == '__main__':
     unittest.main()
