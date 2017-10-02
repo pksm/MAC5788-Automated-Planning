@@ -1,2 +1,2 @@
 # MAC5788-Automated-Planning
-https://travis-ci.org/pksm/MAC5788-Automated-Planning.svg?branch=master
+[![Build Status](https://travis-ci.org/pksm/MAC5788-Automated-Planning.svg?branch=master)](https://travis-ci.org/pksm/MAC5788-Automated-Planning)
