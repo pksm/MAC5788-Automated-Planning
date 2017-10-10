@@ -96,6 +96,17 @@ class PriorityQueue:
         return str([(p, str(item)) for (p, _, item) in self.heap])
 
 
+    def __getitem__(self, key):
+        for _, _, item in self.heap:
+            if item == key:
+                return item
+
+    def __delitem__(self, key):
+        for i, (value, item) in enumerate(self.heap):
+            if item == key:
+                self.heap.pop(i)
+
+
 class PriorityQueueWithFunction(PriorityQueue):
     """
     Implements a priority queue with the same push/pop signature of the

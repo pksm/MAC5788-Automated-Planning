@@ -1,0 +1,132 @@
+
+Solving pddl/robot/boxes/problem01.pddl ...
+
+>> solution length = 3
+>> time: parsing = 0.0074, grounding = 0.0003, planning = 0.0253
+>> nodes explored = 5
+>> nodes visited  = 9
+>> ramification factor = 1.8000
+
+
+Solving pddl/robot/boxes/problem02.pddl ...
+
+>> solution length = 5
+>> time: parsing = 0.0073, grounding = 0.0003, planning = 0.1882
+>> nodes explored = 17
+>> nodes visited  = 46
+>> ramification factor = 2.7059
+
+
+Solving pddl/robot/boxes/problem03.pddl ...
+
+>> solution length = 9
+>> time: parsing = 0.0078, grounding = 0.0003, planning = 1.2559
+>> nodes explored = 81
+>> nodes visited  = 251
+>> ramification factor = 3.0988
+
+
+Solving pddl/robot/boxes/problem04.pddl ...
+
+>> solution length = 11
+>> time: parsing = 0.0084, grounding = 0.0003, planning = 4.4109
+>> nodes explored = 235
+>> nodes visited  = 822
+>> ramification factor = 3.4979
+
+
+Solving pddl/robot/boxes/problem05.pddl ...
+
+>> solution length = 15
+>> time: parsing = 0.0090, grounding = 0.0003, planning = 15.8794
+>> nodes explored = 693
+>> nodes visited  = 2557
+>> ramification factor = 3.6898
+
+
+Solving pddl/robot/boxes/problem06.pddl ...
+
+>> solution length = 17
+>> time: parsing = 0.0090, grounding = 0.0003, planning = 52.2057
+>> nodes explored = 1825
+>> nodes visited  = 7098
+>> ramification factor = 3.8893
+
+
+Solving pddl/robot/boxes/problem07.pddl ...
+
+>> solution length = 21
+>> time: parsing = 0.0086, grounding = 0.0003, planning = 139.0020
+>> nodes explored = 4721
+>> nodes visited  = 18951
+>> ramification factor = 4.0142
+
+
+Solving pddl/robot/boxes/problem08.pddl ...
+
+
+Solving pddl/robot/boxes/problem09.pddl ...
+
+
+Solving pddl/robot/boxes/problem10.pddl ...
+
+
+Solving pddl/robot/boxes/problem11.pddl ...
+
+
+Solving pddl/robot/boxes/problem12.pddl ...
+
+
+Solving pddl/robot/boxes/problem13.pddl ...
+
+
+Solving pddl/robot/boxes/problem14.pddl ...
+
+
+Solving pddl/robot/boxes/problem15.pddl ...
+
+
+Solving pddl/robot/boxes/problem16.pddl ...
+
+
+Solving pddl/robot/boxes/problem17.pddl ...
+
+
+Solving pddl/robot/boxes/problem18.pddl ...
+
+
+Solving pddl/robot/boxes/problem19.pddl ...
+
+
+Solving pddl/robot/boxes/problem20.pddl ...
+
+
+Solving pddl/robot/boxes/problem21.pddl ...
+
+
+Solving pddl/robot/boxes/problem22.pddl ...
+
+
+Solving pddl/robot/boxes/problem23.pddl ...
+
+
+Solving pddl/robot/boxes/problem24.pddl ...
+
+
+Solving pddl/robot/boxes/problem25.pddl ...
+
+
+Solving pddl/robot/boxes/problem26.pddl ...
+
+
+Solving pddl/robot/boxes/problem27.pddl ...
+
+
+Solving pddl/robot/boxes/problem28.pddl ...
+
+
+Solving pddl/robot/boxes/problem29.pddl ...
+
+
+Solving pddl/robot/boxes/problem30.pddl ...
+

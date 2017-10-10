@@ -42,6 +42,9 @@ class Node(object):
     def __str__(self):
         ''' Return the node string as the representation of the state it refers to. '''
         return str(self._state)
+    
+    def __hash__(self):
+        return hash(self.state)
 
     def path(self):
         '''

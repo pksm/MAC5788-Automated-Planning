@@ -36,7 +36,7 @@ class Grounding(object):
         allComb = list(product(*combList))
         return allComb
 
-    def subst(self,comb,act): 
+    def subst(self,comb,act): ###########
         pos = 0
         instAct = deepcopy(act)
         pos_effect = set()
@@ -79,7 +79,7 @@ class Grounding(object):
             if ((self.operatorsPrecond[i] & atomState) == self.operatorsPrecond[i]):
                 validActions.add(i)
         instatiatedActions = self.ground(validActions)
-        print ("Actions", instatiatedActions[0], "Name: ", instatiatedActions[0].name, "Params: ", instatiatedActions[0].params, type(instatiatedActions[0].params), "Precond: ", instatiatedActions[0].precond, "Pos eff> ", instatiatedActions[0].pos_effect)
+        #print ("Actions", instatiatedActions[0], "Name: ", instatiatedActions[0].name, "Params: ", instatiatedActions[0].params, type(instatiatedActions[0].params), "Precond: ", instatiatedActions[0].precond, "Pos eff> ", instatiatedActions[0].pos_effect)
         for act in instatiatedActions:
             precond = act.precond
             if state.intersect(set(precond)) == set(precond):

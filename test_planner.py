@@ -1,5 +1,4 @@
 import unittest
-import os
 from planner import ProgressionPlanning
 from action import GroundedAction
 from state import State

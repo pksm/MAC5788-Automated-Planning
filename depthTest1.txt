@@ -1,0 +1,119 @@
+
+Solving pddl/robot/boxes/problem01.pddl ...
+
+State  {'free(left)', 'free(right)', 'box-at(box1, room1)', 'robot-at(room1)'} ['box-at(box1, room1)', 'free(left)', 'free(right)', 'robot-at(room1)'] <class 'state.State'>
+>> solution length = 3
+>> time: parsing = 0.0075, grounding = 0.0003, planning = 0.0335
+>> nodes explored = 7
+>> nodes visited  = 12
+>> ramification factor = 1.7143
+
+
+Solving pddl/robot/boxes/problem02.pddl ...
+
+State  {'box-at(box2, room1)', 'box-at(box1, room1)', 'free(right)', 'free(left)', 'robot-at(room1)'} ['box-at(box1, room1)', 'box-at(box2, room1)', 'free(left)', 'free(right)', 'robot-at(room1)'] <class 'state.State'>
+>> solution length = 5
+>> time: parsing = 0.0071, grounding = 0.0003, planning = 0.3597
+>> nodes explored = 35
+>> nodes visited  = 98
+>> ramification factor = 2.8000
+
+
+Solving pddl/robot/boxes/problem03.pddl ...
+
+State  {'free(left)', 'box-at(box1, room1)', 'box-at(box2, room1)', 'free(right)', 'box-at(box3, room1)', 'robot-at(room1)'} ['box-at(box1, room1)', 'box-at(box2, room1)', 'box-at(box3, room1)', 'free(left)', 'free(right)', 'robot-at(room1)'] <class 'state.State'>
+>> solution length = 9
+>> time: parsing = 0.0073, grounding = 0.0003, planning = 8.5639
+>> nodes explored = 459
+>> nodes visited  = 1532
+>> ramification factor = 3.3377
+
+
+Solving pddl/robot/boxes/problem04.pddl ...
+
+State  {'box-at(box4, room1)', 'box-at(box3, room1)', 'robot-at(room1)', 'free(left)', 'box-at(box2, room1)', 'free(right)', 'box-at(box1, room1)'} ['box-at(box1, room1)', 'box-at(box2, room1)', 'box-at(box3, room1)', 'box-at(box4, room1)', 'free(left)', 'free(right)', 'robot-at(room1)'] <class 'state.State'>
+>> solution length = 11
+>> time: parsing = 0.0183, grounding = 0.0004, planning = 74.4513
+>> nodes explored = 3395
+>> nodes visited  = 14162
+>> ramification factor = 4.1714
+
+
+Solving pddl/robot/boxes/problem05.pddl ...
+
+
+Solving pddl/robot/boxes/problem06.pddl ...
+
+
+Solving pddl/robot/boxes/problem07.pddl ...
+
+
+Solving pddl/robot/boxes/problem08.pddl ...
+
+
+Solving pddl/robot/boxes/problem09.pddl ...
+
+
+Solving pddl/robot/boxes/problem10.pddl ...
+
+
+Solving pddl/robot/boxes/problem11.pddl ...
+
+
+Solving pddl/robot/boxes/problem12.pddl ...
+
+
+Solving pddl/robot/boxes/problem13.pddl ...
+
+
+Solving pddl/robot/boxes/problem14.pddl ...
+
+
+Solving pddl/robot/boxes/problem15.pddl ...
+
+
+Solving pddl/robot/boxes/problem16.pddl ...
+
+
+Solving pddl/robot/boxes/problem17.pddl ...
+
+
+Solving pddl/robot/boxes/problem18.pddl ...
+
+
+Solving pddl/robot/boxes/problem19.pddl ...
+
+
+Solving pddl/robot/boxes/problem20.pddl ...
+
+
+Solving pddl/robot/boxes/problem21.pddl ...
+
+
+Solving pddl/robot/boxes/problem22.pddl ...
+
+
+Solving pddl/robot/boxes/problem23.pddl ...
+
+
+Solving pddl/robot/boxes/problem24.pddl ...
+
+
+Solving pddl/robot/boxes/problem25.pddl ...
+
+
+Solving pddl/robot/boxes/problem26.pddl ...
+
+
+Solving pddl/robot/boxes/problem27.pddl ...
+
+
+Solving pddl/robot/boxes/problem28.pddl ...
+
+
+Solving pddl/robot/boxes/problem29.pddl ...
+
+
+Solving pddl/robot/boxes/problem30.pddl ...
+
+
