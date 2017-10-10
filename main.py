@@ -71,10 +71,10 @@ if __name__ == '__main__':
     #     h = h_ff
 
     start_time = time.time()
-    signal.signal(signal.SIGALRM, signal.SIG_DFL)
-    signal.alarm(300)
+    #signal.signal(signal.SIGALRM, signal.SIG_DFL)
+    #signal.alarm(300)
     solution, explored, visited = planner.solve(search, h) # IMPORTANTE
-    signal.alarm(0)
+    #signal.alarm(0)
     end_time = time.time()
     uptime['planning'] = end_time - start_time
 
