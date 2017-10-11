@@ -1,7 +1,7 @@
 import re
 from copy import deepcopy
 from itertools import product
-from action import GroundedAction, Action
+from action import GroundedAction, Action, RelaxedAction
 
 class Grounding(object):
     def __init__(self, domain, problem):
@@ -99,3 +99,51 @@ class Grounding(object):
             if state.intersect(set(precond)) == set(precond):
                 app.append(act)
         return app
+
+    def relaxedActions(self,state): 
+        validActions = set()
+        app = list()
+        atomState = {re.sub(r'\([^)]*\)', '', str(i)) for i in state} 
+        for i in self.operatorsPrecond.keys():
+            if ((self.operatorsPrecond[i] & atomState) == self.operatorsPrecond[i]):
+                validActions.add(i)
+        instatiatedActions = self.groundRelaxed(validActions)
+        for act in instatiatedActions:
+            precond = act.precond
+            if state.intersect(set(precond)) == set(precond):
+                app.append(act)
+        return app
+
+    def substRelaxed(self,comb,instAct): 
+        pos = 0
+        pos_effect = set()
+        #neg_effect = set()
+        for valor in comb:
+            instAct._params[pos]._value = valor
+            pos += 1
+        for pre in range(len(instAct.precond)):
+            instAct._precond[pre]._predicate = instAct._precond[pre]._predicate.ground(instAct.params)
+            if ((instAct.precond[pre].predicate.name == '=') and (str(instAct._precond[pre]._predicate.args[0]) == str(instAct._precond[pre]._predicate.args[1]))):
+                return None
+        for eff in range(len(instAct.effects)):
+            if instAct._effects[eff].is_positive():
+                instAct._effects[eff]._predicate = instAct._effects[eff]._predicate.ground(instAct.params)
+                pos_effect.add(str(instAct._effects[eff]._predicate))
+            # else:
+            #     neg_effect.add(str(instAct._effects[eff]._predicate))
+
+        #args = [ str(param.value) for param in instAct.params ]
+        precond = [ str(l.predicate) for l in instAct.precond if l.is_positive() ]
+        return RelaxedAction(instAct.name, precond, pos_effect)
+
+    def groundRelaxed(self, actions): 
+        actToGround = set()
+        for a in actions:
+            typ = [i.type for i in a.params]
+            combAll = self.generate(typ, self.literals)
+            for i in combAll:
+                inst = Action(a.name, a.params, deepcopy(a.precond), deepcopy(a.effects))
+                ac = self.substRelaxed(i, inst)
+                if ac is not None:
+                    actToGround.add(ac)
+        return actToGround

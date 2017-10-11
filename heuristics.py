@@ -27,7 +27,7 @@ def h_add(state, planning, ground):
     change = True
     while change:
         change = False
-        actionsApplicable = ground.applicableActions(X)
+        actionsApplicable = ground.relaxedActions(X) #antes com applicableActions
         for a in actionsApplicable:
             X = successorRelaxed(X,a) #added positive effects of a
             for p in a.pos_effect:
@@ -49,7 +49,7 @@ def h_max(state, planning, ground):
     change = True
     while change:
         change = False
-        actionsApplicable = ground.applicableActions(X)
+        actionsApplicable = ground.relaxedActions(X) #antes com applicableActions
         for a in actionsApplicable:
             X = successorRelaxed(X,a) #added positive effects of a
             for p in a.pos_effect:
