@@ -36,31 +36,26 @@ class Grounding(object):
         allComb = list(product(*combList))
         return allComb
 
-    def subst(self,comb,act): ##### trying not to use deepcopy ######
+    def subst(self,comb,instAct): ##### trying not to use deepcopy ######
         pos = 0
         #instAct = deepcopy(act)
         #import ipdb; ipdb.set_trace()
-        instAct = Action("", act.params, deepcopy(act.precond), deepcopy(act.effects))
-        #import ipdb; ipdb.set_trace()
+        #instAct = Action("", act.params, deepcopy(act.precond), deepcopy(act.effects))
         #print(instAct)
-        # tempParams = deepcopy(instAct._params)
-        # tempPrecond = deepcopy(instAct._precond)
-        # tempEffects = deepcopy(instAct._effects)
-        #import ipdb; ipdb.set_trace()
         pos_effect = set()
         neg_effect = set()
         for valor in comb:
             #act._params[pos]._value = valor
             instAct._params[pos]._value = valor
             pos += 1
-        for pre in range(len(act._precond)):
+        for pre in range(len(instAct.precond)):
             #print("antes de chamar ground", instAct._params)
             #import ipdb; ipdb.set_trace()
-            instAct._precond[pre]._predicate = act._precond[pre]._predicate.ground(instAct.params)
+            instAct._precond[pre]._predicate = instAct._precond[pre]._predicate.ground(instAct.params)
             if ((instAct.precond[pre].predicate.name == '=') and (str(instAct._precond[pre]._predicate.args[0]) == str(instAct._precond[pre]._predicate.args[1]))):
                 return None
-        for eff in range(len(act._effects)):
-            instAct._effects[eff]._predicate = act._effects[eff]._predicate.ground(instAct.params)
+        for eff in range(len(instAct.effects)):
+            instAct._effects[eff]._predicate = instAct._effects[eff]._predicate.ground(instAct.params)
             if instAct._effects[eff].is_positive():
                 pos_effect.add(str(instAct._effects[eff]._predicate))
             else:
@@ -71,17 +66,20 @@ class Grounding(object):
         # instAct._params = tempParams
         # instAct._precond = tempPrecond
         # instAct._effects = tempEffects
-        return GroundedAction(act.name, args, precond, pos_effect, neg_effect)
+        return GroundedAction(instAct.name, args, precond, pos_effect, neg_effect)
 
     def ground(self, actions): 
         actToGround = []
         #copyActions = [deepcopy(a) for a in actions]
         #for index, a in enumerate(actions):
         for a in actions:
+            #aPrecond = deepcopy(a.precond)
+            #aEff = deepcopy(a.effects)
             typ = [i.type for i in a.params]
             combAll = self.generate(typ, self.literals)
             for i in combAll:
-                ac = self.subst(i, a)
+                inst = Action(a.name, a.params, deepcopy(a.precond), deepcopy(a.effects))
+                ac = self.subst(i, inst)
                 #ac = self.subst(list(i), copyActions[index]) 
                 if ac is not None:
                     actToGround.append(ac)
