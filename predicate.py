@@ -15,7 +15,6 @@
 
 
 from term import Term
-from copy import deepcopy
 
 
 class Predicate(object):
@@ -36,21 +35,21 @@ class Predicate(object):
     def arity(self):
         return len(self._args)
 
-
     def is_grounded(self):
         return all( arg.is_constant() for arg in self._args )
 
-
     def ground(self, subst): #list of terms from params
         args = []
+        #print("Lista de subst", subst)
         val = [i.value for i in subst]
-        typ = [i.type for i in subst]
+        #typ = [i.type for i in subst]
         var = [i.name for i in subst]
         for arg in self._args:
             if arg in var:
                 value = val[var.index(arg)]
                 arg = Term.constant(value=value)
-            args.append(arg)         
+            args.append(arg)   
+        #print (Predicate(self._name, args))      
         return Predicate(self._name, args)
 
     def __str__(self):

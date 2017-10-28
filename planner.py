@@ -1,4 +1,4 @@
-from util import Queue, PriorityQueue
+from util import Queue, PriorityQueue, Stack
 from state import State
 from node import Node
 from grounding import Grounding
@@ -134,7 +134,7 @@ class ProgressionPlanning(object):
         num_generated = 0
         opened = set()
         initialNode = Node(State(self.getInit()))
-        nodesNext = Queue()
+        nodesNext = Stack()
         nodesNext.push(initialNode)
         goal = False
         while not goal:
@@ -156,8 +156,5 @@ class ProgressionPlanning(object):
                 print ('Problem does not have a solution')
                 return None
         plan = sNode.path()
-        print ("State ",
-               self.getInit(),
-               State(self.getInit()),
-               type(State(self.getInit())))
+        print(plan)
         return (plan, num_explored, num_generated)

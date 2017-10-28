@@ -27,14 +27,15 @@ def h_add(state, planning, ground):
     change = True
     while change:
         change = False
-        actionsApplicable = ground.relaxedActions(X) #antes com applicableActions
+        actionsApplicable = ground.applicableActions(X)
         for a in actionsApplicable:
             X = successorRelaxed(X,a) #added positive effects of a
             for p in a.pos_effect:
                 prev = h.get(p,sys.maxsize)
 
-                #h[p] = min(prev,(1+sum([h.get(pre, sys.maxsize) for pre in a.precond  ])))
-                h[p] = min(prev,(1+sum(h.get(pre, sys.maxsize) for pre in a.precond)))
+                h[p] = min(prev,(1+sum([h.get(pre, sys.maxsize) for pre in a.precond  ])))
+               
+                #h[p] = min(prev,(1+sum(h.get(pre, sys.maxsize) for pre in a.precond)))
                 if prev != h[p]:
                     change = True
     return sum(h.get(i,sys.maxsize) for i in goal)
@@ -49,7 +50,7 @@ def h_max(state, planning, ground):
     change = True
     while change:
         change = False
-        actionsApplicable = ground.relaxedActions(X) #antes com applicableActions
+        actionsApplicable = ground.applicableActions(X)
         for a in actionsApplicable:
             X = successorRelaxed(X,a) #added positive effects of a
             for p in a.pos_effect:

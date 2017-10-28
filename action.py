@@ -85,3 +85,43 @@ class GroundedAction(object):
         action_str += '>> eff+: {0}\n'.format(', '.join(sorted(self._pos_effect)))
         action_str += '>> eff-: {0}\n'.format(', '.join(sorted(self._neg_effect)))
         return action_str
+
+class RelaxedAction(object):
+
+    def __init__(self, name, precond, pos_effect): 
+        self._name    = name
+        #self._params  = params
+        self._precond = precond
+        self._pos_effect = pos_effect # type 'set'
+        #self._neg_effect = neg_effect # type 'set'
+
+    @property
+    def name(self):
+        return self._name
+
+    # @property
+    # def params(self):
+    #     return self._params[:]
+
+    @property
+    def precond(self):
+        ''' Return a set of precond atoms represented as strings. '''
+        return self._precond[:]
+
+    @property
+    def pos_effect(self):
+        ''' Return a set of positive effect atoms represented as strings. '''
+        return self._pos_effect.copy()
+
+    # @property
+    # def neg_effect(self):
+    #     ''' Return a set of negative effect atoms represented as strings. '''
+    #     return self._neg_effect.copy()
+
+    def __str__(self):
+        # operator_str  = '{0}({1})\n'.format(self._name, ', '.join(map(str, self._params)))
+        #action_str  = '{0}({1})\n'.format(self._name, ', '.join(map(str, self._params)))
+        action_str += '>> precond: {0}\n'.format(', '.join(sorted(self._precond)))
+        action_str += '>> eff+: {0}\n'.format(', '.join(sorted(self._pos_effect)))
+        #action_str += '>> eff-: {0}\n'.format(', '.join(sorted(self._neg_effect)))
+        return action_str
