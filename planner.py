@@ -156,5 +156,5 @@ class ProgressionPlanning(object):
                 print ('Problem does not have a solution')
                 return None
         plan = sNode.path()
-        print(plan)
+        #print(plan)
         return (plan, num_explored, num_generated)
