@@ -1,1 +1,0 @@
-python3 -m cProfile -s tottime main.py pddl/blocksworld/domain.pddl pddl/blocksworld/problems/probBLOCKS-04-0.pddl -s astar -ph add
