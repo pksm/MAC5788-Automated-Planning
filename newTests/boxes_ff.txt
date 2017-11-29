@@ -1,0 +1,55 @@
+'Solving pddl/robot/boxes/problem01.pddl ...'
+>> solution length = 3 
+>> time: parsing = 0.0070, grounding = 0.0010, planning = 0.0230
+>> nodes explored = 7 
+>> nodes visited  = 7
+>> ramification factor = 1.0000  
+
+'Solving pddl/robot/boxes/problem02.pddl ...'   
+>> solution length = 5
+>> time: parsing = 0.0073, grounding = 0.0000, planning = 0.1981
+>> nodes explored = 15
+>> nodes visited  = 27 
+>> ramification factor = 1.8000
+
+'Solving pddl/robot/boxes/problem03.pddl ...' 
+>> solution length = 9     
+>> time: parsing = 0.0068, grounding = 0.0010, planning = 1.3950
+>> nodes explored = 57 
+>> nodes visited  = 106
+>> ramification factor = 1.8596 
+
+'Solving pddl/robot/boxes/problem04.pddl ...' 
+>> solution length = 11 
+>> time: parsing = 0.0081, grounding = 0.0000, planning = 6.5177   
+>> nodes explored = 167                                                                                                
+>> nodes visited  = 339                                                                                                 
+>> ramification factor = 2.0299 
+
+'Solving pddl/robot/boxes/problem05.pddl ...' 
+>> solution length = 15                                                                                                 
+>> time: parsing = 0.0080, grounding = 0.0000, planning = 25.0188                                                       
+>> nodes explored = 487
+>> nodes visited  = 965                                                                                                 
+>> ramification factor = 1.9815 
+
+'Solving pddl/robot/boxes/problem06.pddl ...' 
+>> solution length = 17  
+>> time: parsing = 0.0080, grounding = 0.0000, planning = 103.6777  
+>> nodes explored = 1503                                                                                     
+>> nodes visited  = 3031     
+>> ramification factor = 2.0166  
+
+'Solving pddl/robot/boxes/problem07.pddl ...'  
+>> solution length = 21    
+>> time: parsing = 0.0080, grounding = 0.0000, planning = 375.7738                 
+>> nodes explored = 4413       
+>> nodes visited  = 9050      
+>> ramification factor = 2.0508  
+
+'Solving pddl/robot/boxes/problem08.pddl ...' 
+>> solution length = 23        
+>> nodes explored = 11349                                                                                    
+>> nodes visited  = 23670
+>> ramification factor = 2.0856
+                                                                                                                          

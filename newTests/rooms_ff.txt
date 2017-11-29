@@ -1,0 +1,34 @@
+'Solving pddl/robot/rooms/problem01.pddl ...'
+>> solution length = 0 
+>> time: parsing = 0.0059, grounding = 0.0010, planning = 0.0000                                                        
+>> nodes explored = 1                                                                                                   
+>> nodes visited  = 0                                                                                                   
+>> ramification factor = 0.0000  
+
+'Solving pddl/robot/rooms/problem02.pddl ...' 
+>> solution length = 3                                                                                                  
+>> time: parsing = 0.0060, grounding = 0.0000, planning = 0.0760                                                        
+>> nodes explored = 7                                                                                                   
+>> nodes visited  = 11                                                                                                  
+>> ramification factor = 1.5714 
+
+'Solving pddl/robot/rooms/problem03.pddl ...' 
+>> solution length = 6  
+>> time: parsing = 0.0070, grounding = 0.0000, planning = 1.6802
+>> nodes explored = 32                                                                                                  
+>> nodes visited  = 81                                                                                                  
+>> ramification factor = 2.5312                                                                                                                       
+
+'Solving pddl/robot/rooms/problem04.pddl ...'                                                                                                                                                                                                   
+>> solution length = 10                                                                                                 
+>> time: parsing = 0.0070, grounding = 0.0000, planning = 41.3674                                                       
+>> nodes explored = 310                                                                                                 
+>> nodes visited  = 932                                                                                                 
+>> ramification factor = 3.0065 
+
+'Solving pddl/robot/rooms/problem05.pddl ...'                                                                                                                                                                                                   
+>> solution length = 13                                                                                                 
+>> time: parsing = 0.0070, grounding = 0.0000, planning = 407.9556                                                      
+>> nodes explored = 1726                                                                                                
+>> nodes visited  = 5532                                                                                                
+>> ramification factor = 3.2051 

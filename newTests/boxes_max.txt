@@ -1,0 +1,48 @@
+'Solving pddl/robot/boxes/problem01.pddl ...'  
+>> solution length = 3                                                                                                  
+>> time: parsing = 0.0020, grounding = 0.0000, planning = 0.0551                                                        
+>> nodes explored = 6                                                                                                   
+>> nodes visited  = 7                                                                                                   
+>> ramification factor = 1.1667                                                                                                                       
+
+'Solving pddl/robot/boxes/problem02.pddl ...' 
+>> solution length = 5                                                                                                  
+>> time: parsing = 0.0020, grounding = 0.0000, planning = 0.4593                                                        
+>> nodes explored = 19                                                                                                  
+>> nodes visited  = 31                                                                                                  
+>> ramification factor = 1.6316  
+
+'Solving pddl/robot/boxes/problem03.pddl ...'  
+>> solution length = 9                                                                                                  
+>> time: parsing = 0.0030, grounding = 0.0000, planning = 3.3256                                                        
+>> nodes explored = 87                                                                                                 
+>> nodes visited  = 139                                                                                                
+>> ramification factor = 1.5977  
+
+'Solving pddl/robot/boxes/problem04.pddl ...'   
+>> solution length = 11                                                                                                 
+>> time: parsing = 0.0156, grounding = 0.0000, planning = 13.2841                                                       
+>> nodes explored = 239                                                                                                 
+>> nodes visited  = 435                                                                                                 
+>> ramification factor = 1.8201
+
+'Solving pddl/robot/boxes/problem05.pddl ...'  
+>> solution length = 15                                                                                                 
+>> time: parsing = 0.0000, grounding = 0.0000, planning = 48.0050                                                       
+>> nodes explored = 703                                                                                                 
+>> nodes visited  = 1311                                                                                                
+>> ramification factor = 1.8649 
+
+'Solving pddl/robot/boxes/problem06.pddl ...'  
+>> solution length = 17                                                                                                 
+>> time: parsing = 0.0030, grounding = 0.0000, planning = 154.7190                                                      
+>> nodes explored = 1831                                                                                                
+>> nodes visited  = 3597                                                                                                
+>> ramification factor = 1.9645 
+
+'Solving pddl/robot/boxes/problem07.pddl ...' 
+>> solution length = 21                                                                                                 
+>> time: parsing = 0.0030, grounding = 0.0000, planning = 498.7677                                                      
+>> nodes explored = 4735                                                                                                
+>> nodes visited  = 9535                                                                                                
+>> ramification factor = 2.0137 

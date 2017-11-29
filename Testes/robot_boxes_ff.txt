@@ -1,0 +1,87 @@
+
+'Solving pddl/robot/boxes/problem01.pddl ...'
+
+>> solution length = 3
+>> time: parsing = 0.0040, grounding = 0.0000, planning = 0.0000
+>> nodes explored = 7
+>> nodes visited  = 7
+>> ramification factor = 1.0000
+
+
+'Solving pddl/robot/boxes/problem02.pddl ...'
+
+>> solution length = 5
+>> time: parsing = 0.0000, grounding = 0.0000, planning = 0.0120
+>> nodes explored = 15
+>> nodes visited  = 27
+>> ramification factor = 1.8000
+
+
+'Solving pddl/robot/boxes/problem03.pddl ...'
+
+>> solution length = 9
+>> time: parsing = 0.0040, grounding = 0.0000, planning = 0.0560
+>> nodes explored = 57
+>> nodes visited  = 106
+>> ramification factor = 1.8596
+
+
+'Solving pddl/robot/boxes/problem04.pddl ...'
+
+>> solution length = 11
+>> time: parsing = 0.0040, grounding = 0.0040, planning = 0.3960
+>> nodes explored = 167
+>> nodes visited  = 339
+>> ramification factor = 2.0299
+
+
+'Solving pddl/robot/boxes/problem05.pddl ...'
+
+>> solution length = 15
+>> time: parsing = 0.0040, grounding = 0.0040, planning = 2.9722
+>> nodes explored = 487
+>> nodes visited  = 965
+>> ramification factor = 1.9815
+
+
+'Solving pddl/robot/boxes/problem06.pddl ...'
+
+>> solution length = 17
+>> time: parsing = 0.0000, grounding = 0.0040, planning = 19.0013
+>> nodes explored = 1503
+>> nodes visited  = 3031
+>> ramification factor = 2.0166
+
+
+'Solving pddl/robot/boxes/problem07.pddl ...'
+
+>> solution length = 21
+>> time: parsing = 0.0040, grounding = 0.0080, planning = 101.6866
+>> nodes explored = 4413
+>> nodes visited  = 9050
+>> ramification factor = 2.0508
+
+
+'Solving pddl/robot/boxes/problem08.pddl ...'
+
+>> solution length = 23
+>> time: parsing = 0.0000, grounding = 0.0000, planning = 528.1156
+>> nodes explored = 11349
+>> nodes visited  = 23670
+>> ramification factor = 2.0856
+
+
+'Solving pddl/robot/boxes/problem09.pddl ...'
+
+>> solution length = 27
+>> time: parsing = 0.0000, grounding = 0.0156, planning = 3085.3363
+>> nodes explored = 28127
+>> nodes visited  = 59579
+>> ramification factor = 2.1182
+
+
+'Solving pddl/robot/boxes/problem10.pddl ...'
+
+Deseja finalizar o arquivo em lotes (S/N)? 
+
+Deseja finalizar o arquivo em lotes (S/N)? 

@@ -1,0 +1,90 @@
+
+'Solving pddl/robot/rooms/problem01.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem02.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem03.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem04.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem05.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem06.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem07.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem08.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem09.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem10.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem11.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem12.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem13.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem14.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem15.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem16.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem17.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem18.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem19.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem20.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem21.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem22.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem23.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem24.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem25.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem26.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem27.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem28.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem29.pddl ...'
+
+
+'Solving pddl/robot/rooms/problem30.pddl ...'
+

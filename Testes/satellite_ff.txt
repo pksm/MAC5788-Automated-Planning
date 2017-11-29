@@ -1,0 +1,11 @@
+
+'Solving pddl/satellite/problems/pfile01.pddl ...'
+
+>> solution length = 9
+>> time: parsing = 0.0130, grounding = 0.0030, planning = 1.9814
+>> nodes explored = 215
+>> nodes visited  = 1026
+>> ramification factor = 4.7721
+
+
+'Solving pddl/satellite/problems/pfile02.pddl ...'

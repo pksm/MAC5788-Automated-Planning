@@ -1,0 +1,6 @@
+>> solution length = 10
+>> time: parsing = 0.0090, grounding = 0.0181, planning = 502.8222
+>> nodes explored = 1440
+>> nodes visited  = 7716
+>> ramification factor = 5.3583
+
